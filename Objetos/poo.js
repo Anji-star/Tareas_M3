@@ -55,6 +55,7 @@ const libro = {
 };
 
   libro.describirLibro(); // Muestra la descripción del libro
-  libro.agregarCapitulo("Capítulo 1: Introducción"); // Agrega un capítulo
-  libro.agregarCapitulo("Capítulo 2: Desarrollo"); // Agrega otro capítulo
+  libro.agregarCapitulo("Capítulo 1: Era estupendo quemar"); // Agrega un capítulo
+  libro.agregarCapitulo("Capítulo 2: La criba y la arena"); // Agrega otro capítulo
+  libro.agregarCapitulo("Capítulo 3: Fuego vivo"); // Agrega otro capítulo
   libro.describirLibro(); // Muestra la descripción actualizada
