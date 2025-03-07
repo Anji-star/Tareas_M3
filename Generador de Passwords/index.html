@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Generador de Passwords</title>
+    <link rel="stylesheet" href="stilos.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Doto:wght@100..900&family=Edu+AU+VIC+WA+NT+Hand:wght@400..700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <h1>Generador de Contraseñas</h1>
+        <label for="password-length">Longitud de la contraseña:</label>
+        <input type="number" id="password-length" min="8" max="20" value="12">
+        
+        <div class="options">
+            <label><input type="checkbox" id="include-numbers" checked> Incluir Números</label>
+            <label><input type="checkbox" id="include-symbols" checked> Incluir Símbolos</label>
+            <label><input type="checkbox" id="include-uppercase" checked> Incluir Mayúsculas</label>
+        </div>
+        
+        <button onclick="generatePassword()">Generar Contraseña</button>
+        <input type="text" id="generated-password" readonly>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
